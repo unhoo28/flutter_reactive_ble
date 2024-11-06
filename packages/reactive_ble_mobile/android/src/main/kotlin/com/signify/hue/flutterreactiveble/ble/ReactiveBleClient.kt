@@ -338,7 +338,7 @@ open class ReactiveBleClient(private val context: Context) : BleClient {
                             if (characteristic.descriptors.isEmpty()) {
                                 NotificationSetupMode.COMPAT
                             } else {
-                                NotificationSetupMode.DEFAULT
+                                NotificationSetupMode.QUICK_SETUP
                             }
 
                         if ((characteristic.properties and BluetoothGattCharacteristic.PROPERTY_NOTIFY) > 0) {
